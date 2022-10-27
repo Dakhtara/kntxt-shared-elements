@@ -14,7 +14,7 @@ export default class ProductService
         return products;
     }
 
-    static findById = (id: number): Product|undefined => {
-        return products.find((product: Product) => product.id === id);
+    static findById = (id: number): Product => {
+        return <Product>products.find((product: Product) => product.id === id);
     }
 }

@@ -4,7 +4,7 @@ import * as VueRouter from "vue-router";
 import App from "../App.vue";
 
 const routes = [
-    { path: '/', component: App},
+    { path: '/', redirect: '/products' },
     { path: '/products', component: ProductList },
     { path: '/products/:id', component: ProductShow }
 ]
